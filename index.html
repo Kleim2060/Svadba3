@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css">
+    <title>Приглашение на свадьбу</title>
+</head>
+<body>
+<div class="page">
+    <div class="intro">
+        <div class="container">
+            <div class="intro__inner">
+                <div class="intro__content">
+                    <div class="intro__column">
+                        <div class="intro__date">07<br/>06<br/>24</div>
+                        <div class="intro__date-line"></div>
+                    </div>
+                    <div class="intro__text">
+                        <img class="intro__photo" src="img/intro.jpg" alt="">
+                        <h1 class="intro__title">
+                            Данил<p class="intro__title-en">and</p> Азалия
+                        </h1>
+                        <p class="intro__invite">Приглашаем вас разделить с нами радость главного события в нашей жизни</p>
+                        <div class="intro__time">Пятница, 07 июнь 2024</div>
+                        <address class="intro__address">Загс ул. Сибагата Хакима 4</address>
+                        <p class="intro__say">Ждем всех на нашей свадьбе</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="invite">
+        <div class="container">
+            <div class="invite__inner">
+                <h2 class="invite__title">Дорогой гость!</h2>
+                <p class="invite__text">Мы рады сообщить Вам, что 07.06.2024 состоится самое главное торжество в нашей жизни- день нашей свадьбы! Приглашаем Вас разделить с нами радость этого незабываемого дня.</p>
+                <p class="intro__say">Ждем вac</p>
+                <address class="intro__address">07.06.2024 в 14:30<br/>Загс ул. Сибагата Хакима 4<br/>Ресторан ул. Читаева 58 Г</address>
+                <img class="invite__photo"  src="img/invite.jpg" alt="">
+                <p class="intro__say">Ваши жених и невеста</p>
+            </div>
+        </div>
+    </div>
+    <div class="color">
+        <div class="container">
+            <div class="color__inner">
+                <div class="color__content">
+                    <p class="invite__text">
+                    Будем благодарны, если при выборе нарядов на наше торжество вы придержитесь следующей палитры</p>
+                <div class="color__circle">
+                    <div class="color__item color__item--1"></div>
+                    <div class="color__item color__item--2"></div>
+                    <div class="color__item color__item--3"></div>
+                    <div class="color__item color__item--4"></div>
+                    <div class="color__item color__item--5"></div>
+                    <div class="color__item color__item--6"></div>
+                </div>
+                </div>
+                <button class="color__button">
+                    <img class="color__button--ico" src="img/galochka.svg" alt="">
+                    <div class="color__button--text">Подтвердить</div>
+                </button>
+                <button class="message__btn">
+                    <img src="img/message.svg" alt="">
+                    <div class="message__btn--text">Добавить сообщение для жениха и невесты</div>
+                 </button>
+            </div>
+        </div>
+    </div>
+    <div class="message">
+        <div class="container">
+            <div class="message__inner">
+                <textarea class="message__form" action=""></textarea>
+                <button class="message__send" type="button">
+                    <div class="message__send--ico">
+                        <img src="img/send.png" alt="">
+                    </div>
+                    <div class="message__send--text">Отправить</div>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="question">
+        <div class="container">
+            <div class="question__content">
+                <div class="quesion__ico">
+                    <img src="img/question__thank.png" alt="">
+                </div>
+                <div class="question__text">Спасибо, что подтвердили свое присутствие!
+                    Жених и Невеста уже оповещены об этом ;)</div>
+            </div>
+            <div class="question__inner">
+                <h2 class="question__title">Пожалуйста, ответьте на вопросы, которые для вас подготовили <b> Данил</b> и <b>Азалия</b></h2>
+                <form class="question__form">
+                    <fieldset>
+                      <legend class="question__form--title">Вам нужен трансфер:</legend>
+                      <div class="question__item">
+                        <div class="question__item--radio">
+                            <input type="radio" id="transferChoice1" name="transfer" value="email" />
+                        <label for="transferChoice1">Нет</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="transferChoice2" name="transfer" value="phone" />
+                            <label for="transferChoice2">Только до</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="transferChoice3" name="transfer" value="mail" />
+                            <label for="transferChoice3">Только после</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="transferChoice4" name="transfer" value="mail" />
+                            <label for="transferChoice4">До и после</label>
+                        </div>
+                    </div>
+                    <legend class="question__form--title">Какой алкоголь вы предпочитаете:</legend>
+                    <div class="question__item">
+                        <div class="question__item--radio">
+                            <input type="radio" id="alcoholChoice1" name="alcohol" value="email" />
+                          <label for="alcoholChoice1">Красивое вино</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="alcoholChoice2" name="alcohol" value="phone" />
+                          <label for="alcoholChoice2">Белое вино</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="alcoholChoice3" name="alcohol" value="mail" />
+                            <label for="alcoholChoice3">Шампанское</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="alcoholChoice4" name="alcohol" value="mail" />
+                          <label for="alcoholChoice4">Виски/коньяк</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="alcoholChoice5" name="alcohol" value="mail" />
+                            <label for="alcoholChoice5">Виски/коньяк</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="alcoholChoice6" name="alcohol" value="mail" />
+                          <label for="alcoholChoice6">Водка</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="alcoholChoice7" name="alcohol" value="mail" />
+                          <label for="alcoholChoice7">Я не буду пить алкоголь</label>
+                        </div>
+                    </div>
+                    <legend class="question__form--title">Будет ли с вами ребенок:</legend>
+                    <div class="question__item">
+                        <div class="question__item--radio">
+                            <input type="radio" id="chadChoice1" name="chad" value="email" />
+                          <label for="chadChoice1">Да</label>
+                        </div>
+                        <div class="question__item--radio">
+                            <input type="radio" id="chadChoice2" name="chad" value="phone" />
+                            <label for="chadChoice2">Нет</label>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="question__send" type="submit">Отправить</button>
+                    </div>
+                      </fieldset>
+                  </form>
+            </div>
+        </div>
+    </div>
+    <div class="map">
+        <div class="container">
+            <div class="map__inner">
+                <div class="map__title">Свадебное расписание</div>
+
+            <div class="map__content">
+                <div class="map__date">
+                    14:30 <br> 07.06.2024
+                </div>
+                <div class="map__place">
+                    <div class="map__item">
+                        <div class="map__zags">Загс</div>
+                        <div class="map__address">Казань, Сибагата Хакима 4</div>
+                    </div>
+                    <div class="map__text">
+                        Здесь пройдет наша регистрация. Приглашаем всех разделить с нами такой торжественный момент.
+                    </div>
+                </div>
+            </div>
+            <div class="map__content">
+                <div class="map__date">
+                    17:00 <br> 07.06.2024
+                </div>
+                <div class="map__place">
+                    <div class="map__item">
+                        <div class="map__zags">Банкет</div>
+                        <div class="map__address">Казань, ул. Четаева 58 Г</div>
+                    </div>
+                </div>
+            </div>
+            <div class="map__carta">
+                <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A9a7e4c567eb29210de20f062e5e208aece9c938edc1a112234840f22518b37a2&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <h2 class="footer__title">Ссылки на соц. сети</h2>
+                <div class="footer__item">
+                    <div class="footer__img">
+                        <img src="img/telegram.png" alt="">
+                    </div>
+                    <a href="https://t.me/aza_nagore" class="footer__social">Данил</a>
+                </div>
+                <div class="footer__item">
+                    <div class="footer__img">
+                        <img src="img/telegram.png" alt="">
+                    </div>
+                    <a href="https://t.me/aza_nagore" class="footer__social">Азалия</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

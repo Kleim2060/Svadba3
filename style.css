@@ -1,0 +1,585 @@
+/* Обнуление */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+:focus {
+  outline: 0;
+}
+
+/* Шрифты */
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+@font-face {
+    font-family: 'Lobster';
+    src: url('font/Lobster/Lobster-Regular.woff2') format('woff2'),
+        url('font/Lobster/Lobster-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Snell Roundhand';
+    src: url('font/Snell/SnellRoundhand.woff2') format('woff2'),
+        url('font/Snell/SnellRoundhand.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Oceanic';
+    src: url('font/Light/Cormorant-Light.woff2') format('woff2'),
+        url('font/Light/Cormorant-Light.woff') format('woff');
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font: 1.4rem "Playfair Display", sans-serif;
+
+}
+
+.page{
+    overflow: hidden;
+}
+
+.container{
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.intro{
+    font-family: 'Playfair Display', serif;
+
+    margin-top: 5rem;
+}
+
+.intro__inner{
+    height: 100vh;
+}
+
+.intro__content{
+    display: flex;
+}
+
+.intro__date{
+    font-family: 'Lobster';
+
+    font-size: 3.6rem;
+    min-width: 10rem;
+    width: 100%;
+}
+
+.intro__date-line {
+    padding-left: 13px;
+    position: relative;
+    display: inline-block;
+  }
+
+.intro__date-line:before{
+    content: " ";
+    position: absolute;
+
+    background: #000;
+    width: 2px;
+    height: 475px;
+    top: 25px;
+}
+
+.intro__title{
+    font-family: 'Cormorant Infant', serif;
+
+    font-size: 4.6rem;
+    margin-top: 2rem;
+    line-height: 5rem;
+}
+
+.intro__title-en{
+    font-family: 'Snell Roundhand';
+    font-size: 2.4rem;
+
+}
+
+.intro__invite{
+    font-family: 'Playfair Display', serif;
+    max-width: 45rem;
+    text-transform: uppercase;
+    margin-top: 2rem;
+}
+
+.intro__address{
+    font-family: 'Oceanic';
+
+    margin: 3rem 0;
+}
+
+.intro__say{
+    font-family: 'Snell Roundhand';
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.intro__column{
+    margin-left: 3rem;
+}
+
+.intro__cnt{
+    font-size: 2.4rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.intro__time{
+    font-family: 'Oceanic';
+
+    margin-top: 2rem;
+    font-weight: 700;
+}
+
+.intro__photo{
+    max-width: 200px;
+    max-height: 265px;
+    width: 100%;
+    height: 100%;
+}
+
+.invite{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    margin-bottom: 5rem;
+}
+
+.invite__title{
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 4rem;
+}
+
+.invite__text{
+    font-family: 'Oceanic';
+    line-height: 1.8;
+
+    opacity: .9;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.invite__photo{
+    max-width: 300px;
+    width: 100%;
+}
+
+.color{
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+
+    margin: 3rem 0;
+}
+
+.color__circle{
+    display: flex;
+    max-width: 30rem;
+
+    margin: 3rem auto;
+    justify-content: space-around;
+}
+
+.color__item{
+    background: #456BD9;
+    border-radius: 50%;
+    height: 3em;
+    width: 3em;
+}
+
+.color__item--1{
+    background: #e3dbd3;
+}
+
+.color__item--2{
+    background: #9cb2a5;
+}
+
+.color__item--3{
+    background: #8ba4b3;
+}
+
+.color__item--4{
+    background: #c8b7c9;
+}
+
+.color__item--5{
+    background: #9d7982;
+}
+
+.color__item--6{
+    background: #733236;
+}
+
+.color__button{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    padding: 0 2rem;
+    margin: 0 auto;
+    max-width: 25rem;
+    width: 100%;
+    padding: 1rem 0;
+
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background: #2B2B2B;
+    border-radius: 30px;
+    gap: .5rem;
+    transition: all .2s linear;
+}
+
+.color__button.checked{
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}
+
+.color__button--ico{
+    width: 2rem;
+}
+
+
+.question{
+    height: 0;
+    opacity: 0;
+    font-family: 'Playfair Display', serif;
+    max-width: 40rem;
+    margin: 0 auto 3rem;
+    transition: all .2s linear;
+}
+
+.question__content{
+    display: flex;
+    width: fit-content;
+    justify-content: space-around;
+    align-items: center;
+    background: #DFF0D8;
+    color: green;
+    border-radius: 5px;
+    padding: 3rem;
+    gap: 3rem;
+    min-height: 10rem;
+
+    margin: 2rem auto;
+}
+
+.question__item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.question__form{
+    font-family: 'Playfair Display', serif;
+    margin-top: 5rem;
+}
+
+.question__form--title{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 700;
+}
+
+.question__item--radio{
+    margin-bottom: 1rem;
+    margin-left: 2rem;
+}
+
+.question__text{
+    max-width: 15rem;
+}
+
+.quesion__ico img{
+    width: 3rem;
+}
+
+.question.active{
+    height: auto;
+    opacity: 1;
+}
+
+.question__title{
+    background-color: #E7F2F8;
+    border-left: 3px solid #E7664B;
+    padding: 2rem 3rem;
+}
+
+.question__send{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+
+    cursor: pointer;
+    width: fit-content;
+    background: #FFCC41;
+    border: none;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+}
+
+.message{
+    opacity: 0;
+    height: 0;
+    margin: 0 auto;
+}
+
+.message.active{
+    opacity: 1;
+    height: auto;
+}
+
+.message__form{
+    border-radius: .5rem;
+    height: 8rem;
+}
+
+.message__send{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 2rem 0 0 auto;
+
+    cursor: pointer;
+    float: right;
+    width: fit-content;
+    background: #A5DCEC;
+    border: none;
+    border-radius: 5rem;
+    padding: .5rem 1rem;
+}
+
+.message__send--text{
+    font-weight: 700;
+}
+
+.message__send--ico img{
+    width: 2rem;
+}
+
+.message__send:hover{
+    opacity: .7;
+}
+
+.message__inner{
+    max-width: 30rem;
+
+    display: flex;
+    padding: 2rem;
+    border-radius: 1.5rem;
+    flex-direction: column;
+    margin: 0 auto;
+    -webkit-box-shadow: 1px 1px 29px -1px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 1px 1px 29px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 1px 1px 29px -1px rgba(0, 0, 0, 0.4);
+}
+
+.message__btn{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    padding-top: 2rem;
+    gap: .5rem;
+    font-family: 'Oceanic';
+
+    color: #808080;
+    border: none;
+    background: none;
+    transition: all .2s linear;
+}
+
+.message__btn:hover{
+    border-bottom: 2px solid red;
+}
+
+.message__btn--text{
+    font-weight: 700;
+}
+
+.message__btn img{
+    width: 2rem;
+}
+
+.message__btn.checked{
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}
+
+.map{
+    font-family: 'Playfair Display', serif;
+    background-color: #FAFAFA;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+}
+
+.map__title{
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 700;
+
+    margin-bottom: 4rem;
+}
+
+.map iframe{
+    margin: 0 auto;
+}
+
+.map__carta{
+    display: flex;
+}
+
+.map__content{
+    font-family: 'Oceanic';
+
+    display: flex;
+    justify-content: space-around;
+}
+
+.map__place{
+    max-width: 30rem;
+    min-width: 30rem;
+}
+
+.map__item{
+    margin-left: 2rem;
+}
+
+.map__zags{
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.map__address{
+    margin: 1rem 0;
+    color: #AFA3A5;
+}
+
+.map__text{
+    margin-bottom: 6rem;
+}
+
+.footer{
+    opacity: .9;
+    display: flex;
+    background-color: #E7F2F8;
+    height: 10vh;
+    transition: all .2s linear;
+}
+
+.footer__social{
+    color: #000;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+.footer__social:hover{
+    color: red;
+}
+
+.footer:hover{
+    opacity: 1;
+}
+
+.footer__title{
+    font-weight: 500;
+}
+
+.footer__inner{
+    display: flex;
+    gap: 3rem;
+    margin-top: 2rem;
+    align-items: center;
+}
+
+.footer__item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
+.footer__img img{
+    width: 3rem;
+}
+
+@media(max-width: 1300px) {
+    .intro{
+        margin-top: 3rem;
+    }
+
+    .intro__date{
+        font-size: 2.4rem;
+    }
+
+    .intro__photo{
+        max-width: 170px;
+        max-height: 225px;
+    }
+}
+
+
+@media(max-width: 500px) {
+    .invite__text{
+        max-width: 30rem;
+    }
+
+    .intro__title{
+        font-size: 4rem;
+    }
+
+    .intro__invite{
+        font-size: 1.2rem;
+        max-width: 30rem;
+    }
+
+    .intro__photo{
+        max-width: 150px;
+        max-height: 200px;
+    }
+
+    .intro__say{
+        font-size: 2.2rem;
+    }
+}
